@@ -2,8 +2,8 @@
   "name": "greetingvscode",
 	"displayName": "GreetingVSCode",
 	"description": "",
-	"icon": "./greetingVSCodeLogo.png",
-	"version": "0.0.1",
+	"icon": "greetingVSCodeLogo.png",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
