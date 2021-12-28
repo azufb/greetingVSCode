@@ -18,17 +18,20 @@ function activate(context) {
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with  registerCommand
   // The commandId parameter must match the command field in package.json
-  let disposable = vscode.commands.registerCommand(
-    'greetingvscode.helloWorld',
-    function () {
-      // The code you place here will be executed every time your command is executed
 
-      // Display a message box to the user
-      vscode.window.showInformationMessage('Hello World from GreetingVSCode!');
-    }
-  );
+  const messages = [
+    'ようこそ、Visual Stuio Codeへ！',
+    'こんにちは！',
+    '今日も1日、よろしくお願いします！',
+    'いつも頑張ってますね！',
+    '使ってくれてありがとう！',
+  ];
 
-  context.subscriptions.push(disposable);
+  let displayMessage = messages[Math.floor(Math.random() * messages.length)];
+
+  vscode.window.showInformationMessage(displayMessage);
+
+  //context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
