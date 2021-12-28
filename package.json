@@ -1,9 +1,9 @@
 {
   "name": "greetingvscode",
-	"displayName": "GreetingVSCode",
+	"displayName": "Greeting VSCode",
 	"description": "",
 	"icon": "greetingVSCodeLogo.png",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
@@ -12,7 +12,7 @@
 	],
 	"publisher": "azunyan",
 	"activationEvents": [
-        "*"
+        "onStartupFinished"
 	],
 	"main": "./extension.js",
 	"contributes": {
