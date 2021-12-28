@@ -20,7 +20,7 @@ function activate(context) {
   // The commandId parameter must match the command field in package.json
 
   const messages = [
-    'ようこそ、Visual Stuio Codeへ！',
+    'ようこそ、Visual Studio Codeへ！',
     'こんにちは！',
     '今日も1日、よろしくお願いします！',
     'いつも頑張ってますね！',
