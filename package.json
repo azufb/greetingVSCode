@@ -16,7 +16,7 @@
 	"contributes": {
 		"commands": [{
             "command": "greetingvscode.helloWorld",
-            "title": "Hello World"
+            "title": "GreetingVSCode"
 
 		}]
 	},
