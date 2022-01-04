@@ -3,7 +3,7 @@
 	"displayName": "Greeting VSCode",
 	"description": "",
 	"icon": "greetingVSCodeLogo.png",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.63.0"
 	},

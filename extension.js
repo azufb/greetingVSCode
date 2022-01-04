@@ -19,19 +19,35 @@ function activate() {
   // Now provide the implementation of the command with  registerCommand
   // The commandId parameter must match the command field in package.json
 
+  let today = new Date();
+  let hourNow = today.getHours();
+  let greeting;
+
+  let greetings = [
+    'おはようございます！',
+    'こんにちは。',
+    '遅くまでお疲れ様です。',
+  ];
+
+  if (hourNow >= 17) {
+    greeting = greetings[2];
+  } else if (hourNow >= 13) {
+    greeting = greetings[1];
+  } else {
+    greeting = greetings[0];
+  }
+
   const messages = [
     'ようこそ、Visual Studio Codeへ！',
-    'こんにちは！',
-    '今日も1日、よろしくお願いします！',
-    'いつも頑張ってますね！',
-    '使ってくれてありがとう！',
+    greeting,
+    '今日も、よろしくお願いします！',
+    'いつも頑張ってますね。さすがです！',
+    '使ってくれてありがとう。',
   ];
 
   let displayMessage = messages[Math.floor(Math.random() * messages.length)];
 
   vscode.window.showInformationMessage(displayMessage);
-
-  //context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
