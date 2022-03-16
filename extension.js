@@ -46,8 +46,14 @@ function activate() {
   ];
 
   let displayMessage = messages[Math.floor(Math.random() * messages.length)];
-
   vscode.window.showInformationMessage(displayMessage);
+
+  let rest = "お疲れ様です！そろそろ休憩はいかがですか？";
+  const restAlert = () => {
+    vscode.window.showInformationMessage(rest);
+  }
+
+  setInterval(restAlert, 3600000);
 }
 
 // this method is called when your extension is deactivated
